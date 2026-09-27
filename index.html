@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Degorce — Développeur Front-End Junior</title>
+  <meta name="description" content="Portfolio de Nathan Degorce, développeur Front-End junior spécialisé HTML, CSS, JavaScript et React. Découvrez mes projets et compétences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#accueil" class="logo">Nathan Degorce</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Développeur Front-End junior</p>
+        <h1>Bonjour, je suis Nathan Degorce.</h1>
+        <p class="hero-lead">Je conçois des interfaces web propres, accessibles et bien pensées — avec un vrai goût pour le travail bien fait.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+          <a class="btn btn-secondary" href="#contact">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="a-propos" class="section">
+      <div class="container">
+        <h2>À propos</h2>
+        <div class="about-content">
+          <p>J'ai découvert le développement web via une formation chez OpenClassrooms, où je m'étais déjà frotté au HTML plus jeune par simple curiosité — c'est cette envie de comprendre "comment c'est fait" qui m'a naturellement conduit vers cette formation, jusqu'à apprendre React.</p>
+          <p>Je maîtrise les fondamentaux HTML/CSS/JavaScript ainsi que React pour construire des interfaces dynamiques et componentisées. J'ai également une première expérience du back-end avec Node.js, Express et MongoDB, ainsi que des bonnes pratiques d'accessibilité et d'optimisation des performances.</p>
+          <p>Je suis quelqu'un de sérieux et rigoureux : je tiens à comprendre en profondeur ce que j'écris plutôt que de me contenter d'un code qui fonctionne sans le maîtriser, tout en gardant à l'esprit qu'un projet doit avant tout être livré et fonctionnel.</p>
+          <p>Aujourd'hui en début de carrière, je cherche un premier poste de développeur Front-End pour apprendre au contact d'une équipe expérimentée.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section id="competences" class="section section-alt">
+      <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Front-End</h3>
+            <ul>
+              <li>HTML5 sémantique</li>
+              <li>CSS3 / Sass</li>
+              <li>JavaScript ES6+</li>
+              <li>React / React Router</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Back-End</h3>
+            <ul>
+              <li>Node.js / Express</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>API REST / JWT</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Outils &amp; qualité</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Accessibilité (WCAG)</li>
+              <li>Lighthouse / WAVE</li>
+              <li>Gestion de projet (Kanban)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section">
+      <div class="container">
+        <h2>Projets</h2>
+        <div class="filters" role="group" aria-label="Filtrer les projets">
+          <button class="filter-btn is-active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="perso">Personnel</button>
+          <button class="filter-btn" data-filter="formation">Formation</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-category="perso">
+            <div class="project-thumb" aria-hidden="true">Dedalofus</div>
+            <div class="project-body">
+              <h3>Dedalofus</h3>
+              <p class="project-tag">Projet personnel</p>
+              <p>Simulateur de stuff pour le Dédale, le mode rogue-lite de Dofus Touch. Joueur du jeu, j'ai remarqué qu'aucun outil ne couvrait ce mode. Développé en solo sur un mois : composition d'équipement, calcul de dégâts, comptes utilisateurs.</p>
+              <ul class="tech-list">
+                <li>React</li><li>Node.js</li><li>Express</li><li>MySQL</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/pataupe/Dedalofus" target="_blank" rel="noopener">Code source</a>
+                <a href="https://dedalofus.fr" target="_blank" rel="noopener">Démo live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="formation">
+            <div class="project-thumb" aria-hidden="true">Sophie Bluel</div>
+            <div class="project-body">
+              <h3>Site vitrine — Architecte d'intérieur</h3>
+              <p class="project-tag">Projet de formation</p>
+              <p>Site vitrine avec interface d'administration dynamique. Connexion du front à une API REST (authentification JWT, upload d'images) pour ajouter/supprimer des projets sans recharger la page.</p>
+              <ul class="tech-list">
+                <li>JavaScript ES6+</li><li>Fetch API</li><li>Node.js</li><li>Express</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/pataupe/Site-Sophie-Bluel" target="_blank" rel="noopener">Code source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="formation">
+            <div class="project-thumb" aria-hidden="true">Kasa</div>
+            <div class="project-body">
+              <h3>Kasa — Plateforme de location</h3>
+              <p class="project-tag">Projet de formation</p>
+              <p>Interface React d'une plateforme type Airbnb, développée à partir de maquettes Figma. Architecture 100% componentisée avec navigation multi-pages via React Router.</p>
+              <ul class="tech-list">
+                <li>React</li><li>React Router</li><li>Vite</li><li>Sass</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/pataupe/Kasa" target="_blank" rel="noopener">Code source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section id="parcours" class="section section-alt">
+      <div class="container">
+        <h2>Parcours</h2>
+        <ol class="timeline">
+          <li>
+            <h3>Formation Développeur Web — OpenClassrooms</h3>
+            <p>Progression du HTML/CSS jusqu'au Full-Stack : intégration responsive, JavaScript et API, React, back-end Node.js/Express/MongoDB, gestion de projet, et enfin ce portfolio.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="contact-lead">Une opportunité, une question ? N'hésitez pas à me contacter.</p>
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <p class="field-error" id="nameError" role="alert"></p>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <p class="field-error" id="emailError" role="alert"></p>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p class="field-error" id="messageError" role="alert"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <p class="form-success" id="formSuccess" role="status" hidden>Merci, votre message a bien été envoyé !</p>
+          </form>
+          <div class="contact-links">
+            <a href="https://github.com/pataupe" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nathan Degorce</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
