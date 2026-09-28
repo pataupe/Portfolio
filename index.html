@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nathan Degorce — Développeur Front-End Junior</title>
+  <title>Nathan Degorce, développeur Front-End junior</title>
   <meta name="description" content="Portfolio de Nathan Degorce, développeur Front-End junior spécialisé HTML, CSS, JavaScript et React. Découvrez mes projets et compétences.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
       <div class="container hero-inner">
         <p class="eyebrow">Développeur Front-End junior</p>
         <h1>Bonjour, je suis Nathan Degorce.</h1>
-        <p class="hero-lead">Je conçois des interfaces web propres, accessibles et bien pensées — avec un vrai goût pour le travail bien fait.</p>
+        <p class="hero-lead">Je conçois des interfaces web propres, accessibles et bien pensées, avec un vrai goût pour le travail bien fait.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projets">Voir mes projets</a>
           <a class="btn btn-secondary" href="#contact">Me contacter</a>
@@ -54,10 +54,9 @@
       <div class="container">
         <h2>À propos</h2>
         <div class="about-content">
-          <p>J'ai découvert le développement web via une formation chez OpenClassrooms, où je m'étais déjà frotté au HTML plus jeune par simple curiosité — c'est cette envie de comprendre "comment c'est fait" qui m'a naturellement conduit vers cette formation, jusqu'à apprendre React.</p>
-          <p>Je maîtrise les fondamentaux HTML/CSS/JavaScript ainsi que React pour construire des interfaces dynamiques et componentisées. J'ai également une première expérience du back-end avec Node.js, Express et MongoDB, ainsi que des bonnes pratiques d'accessibilité et d'optimisation des performances.</p>
-          <p>Je suis quelqu'un de sérieux et rigoureux : je tiens à comprendre en profondeur ce que j'écris plutôt que de me contenter d'un code qui fonctionne sans le maîtriser, tout en gardant à l'esprit qu'un projet doit avant tout être livré et fonctionnel.</p>
-          <p>Aujourd'hui en début de carrière, je cherche un premier poste de développeur Front-End pour apprendre au contact d'une équipe expérimentée.</p>
+          <p>Je m'intéressais déjà un peu au HTML plus jeune, par simple curiosité. C'est ce qui m'a conduit vers une formation de développeur web chez OpenClassrooms, jusqu'à apprendre React.</p>
+          <p>Je maîtrise HTML/CSS/JavaScript et React côté front, avec une première expérience Node.js/Express/MongoDB côté back. Je suis sérieux et rigoureux : je préfère comprendre en profondeur ce que j'écris plutôt que livrer un code qui fonctionne sans le maîtriser.</p>
+          <p>Aujourd'hui, je cherche un premier poste de développeur Front-End pour apprendre au contact d'une équipe expérimentée.</p>
         </div>
       </div>
     </section>
@@ -67,7 +66,7 @@
       <div class="container">
         <h2>Compétences</h2>
         <div class="skills-grid">
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <h3>Front-End</h3>
             <ul>
               <li>HTML5 sémantique</li>
@@ -76,7 +75,7 @@
               <li>React / React Router</li>
             </ul>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <h3>Back-End</h3>
             <ul>
               <li>Node.js / Express</li>
@@ -85,7 +84,7 @@
               <li>API REST / JWT</li>
             </ul>
           </div>
-          <div class="skill-card">
+          <div class="skill-card reveal">
             <h3>Outils &amp; qualité</h3>
             <ul>
               <li>Git / GitHub</li>
@@ -109,12 +108,12 @@
         </div>
 
         <div class="projects-grid" id="projectsGrid">
-          <article class="project-card" data-category="perso">
+          <article class="project-card reveal" data-category="perso">
             <div class="project-thumb" aria-hidden="true">Dedalofus</div>
             <div class="project-body">
               <h3>Dedalofus</h3>
               <p class="project-tag">Projet personnel</p>
-              <p>Simulateur de stuff pour le Dédale, le mode rogue-lite de Dofus Touch. Joueur du jeu, j'ai remarqué qu'aucun outil ne couvrait ce mode. Développé en solo sur un mois : composition d'équipement, calcul de dégâts, comptes utilisateurs.</p>
+              <p>Simulateur de stuff pour le Dédale, le mode rogue-lite du jeu Dofus Touch. Joueur du jeu, j'ai remarqué qu'aucun outil ne couvrait ce mode. Développé en solo sur 3 semaines : composition d'équipement, calcul de dégâts, comptes utilisateurs.</p>
               <ul class="tech-list">
                 <li>React</li><li>Node.js</li><li>Express</li><li>MySQL</li>
               </ul>
@@ -122,13 +121,30 @@
                 <a href="https://github.com/pataupe/Dedalofus" target="_blank" rel="noopener">Code source</a>
                 <a href="https://dedalofus.fr" target="_blank" rel="noopener">Démo live</a>
               </div>
+              <details class="project-details">
+                <summary>En savoir plus</summary>
+                <dl>
+                  <dt>Contexte</dt>
+                  <dd>Dofus Touch propose un mode rogue-lite, le Dédale, avec un système d'équipement complexe. Aucun outil en ligne, pas même DofusBook, ne le prenait en charge.</dd>
+                  <dt>Objectifs</dt>
+                  <dd>Permettre aux joueurs de composer un équipement complet et de calculer les dégâts obtenus, pour préparer leur run.</dd>
+                  <dt>Stack technique</dt>
+                  <dd>React (Vite) côté client, Node.js/Express côté serveur, MySQL en SQL brut, authentification JWT.</dd>
+                  <dt>Compétences développées</dt>
+                  <dd>Architecture full-stack en autonomie, modélisation d'une base de données relationnelle complexe, séparation de la logique métier en fonctions pures testables.</dd>
+                  <dt>Résultats et impact</dt>
+                  <dd>MVP fonctionnel : consultation des équipements, comptes utilisateurs, calculateur de dégâts avec bonus de panoplie.</dd>
+                  <dt>Perspectives d'amélioration</dt>
+                  <dd>Liste des mobs, comparateur d'items avancé, images réelles des équipements, fonctionnalités communautaires.</dd>
+                </dl>
+              </details>
             </div>
           </article>
 
-          <article class="project-card" data-category="formation">
+          <article class="project-card reveal" data-category="formation">
             <div class="project-thumb" aria-hidden="true">Sophie Bluel</div>
             <div class="project-body">
-              <h3>Site vitrine — Architecte d'intérieur</h3>
+              <h3>Site vitrine pour une architecte d'intérieur</h3>
               <p class="project-tag">Projet de formation</p>
               <p>Site vitrine avec interface d'administration dynamique. Connexion du front à une API REST (authentification JWT, upload d'images) pour ajouter/supprimer des projets sans recharger la page.</p>
               <ul class="tech-list">
@@ -137,13 +153,30 @@
               <div class="project-links">
                 <a href="https://github.com/pataupe/Site-Sophie-Bluel" target="_blank" rel="noopener">Code source</a>
               </div>
+              <details class="project-details">
+                <summary>En savoir plus</summary>
+                <dl>
+                  <dt>Contexte</dt>
+                  <dd>Projet de formation OpenClassrooms : développer le site d'une architecte d'intérieur avec une interface d'administration pour gérer son book de projets sans toucher au code.</dd>
+                  <dt>Objectifs</dt>
+                  <dd>Rendre dynamique un site statique en le connectant à une API REST, gérer l'authentification d'un compte admin, permettre l'ajout/suppression de projets avec upload d'image.</dd>
+                  <dt>Stack technique</dt>
+                  <dd>JavaScript ES6+ (vanilla), Fetch API, HTML/CSS sémantique côté front ; Node.js/Express/SQLite côté back (fourni).</dd>
+                  <dt>Compétences développées</dt>
+                  <dd>Consommation d'API REST avec fetch/async/await, manipulation du DOM, authentification JWT et localStorage, upload de fichiers via FormData.</dd>
+                  <dt>Résultats et impact</dt>
+                  <dd>Projet validé dès la première évaluation. Points forts relevés par l'évaluateur : très bonne maîtrise du JavaScript vanilla et de la manipulation du DOM, interactions fluides sans rechargement de page.</dd>
+                  <dt>Perspectives d'amélioration</dt>
+                  <dd>Optimiser la gestion des erreurs réseau, factoriser certaines parties du code, ajouter des retours visuels de chargement.</dd>
+                </dl>
+              </details>
             </div>
           </article>
 
-          <article class="project-card" data-category="formation">
+          <article class="project-card reveal" data-category="formation">
             <div class="project-thumb" aria-hidden="true">Kasa</div>
             <div class="project-body">
-              <h3>Kasa — Plateforme de location</h3>
+              <h3>Kasa, plateforme de location</h3>
               <p class="project-tag">Projet de formation</p>
               <p>Interface React d'une plateforme type Airbnb, développée à partir de maquettes Figma. Architecture 100% componentisée avec navigation multi-pages via React Router.</p>
               <ul class="tech-list">
@@ -152,6 +185,23 @@
               <div class="project-links">
                 <a href="https://github.com/pataupe/Kasa" target="_blank" rel="noopener">Code source</a>
               </div>
+              <details class="project-details">
+                <summary>En savoir plus</summary>
+                <dl>
+                  <dt>Contexte</dt>
+                  <dd>Projet de formation OpenClassrooms : développer l'interface d'une plateforme de location immobilière type Airbnb, à partir de maquettes Figma et de données mockées.</dd>
+                  <dt>Objectifs</dt>
+                  <dd>Construire une interface entièrement componentisée avec React, gérer la navigation multi-pages avec React Router, manipuler props et state.</dd>
+                  <dt>Stack technique</dt>
+                  <dd>React, React Router, Vite, Sass (fichiers modulaires par composant).</dd>
+                  <dt>Compétences développées</dt>
+                  <dd>Architecture en composants réutilisables, routing dynamique avec paramètres d'URL, gestion des props/state, page d'erreur 404.</dd>
+                  <dt>Résultats et impact</dt>
+                  <dd>Projet validé après une relivraison : l'évaluateur souligne la bonne prise en compte des retours et la capacité d'amélioration suite aux corrections demandées.</dd>
+                  <dt>Perspectives d'amélioration</dt>
+                  <dd>Approfondir les hooks React (useState, useEffect, cycle de vie), renforcer la structure HTML sémantique et la hiérarchie des titres.</dd>
+                </dl>
+              </details>
             </div>
           </article>
         </div>
@@ -164,7 +214,7 @@
         <h2>Parcours</h2>
         <ol class="timeline">
           <li>
-            <h3>Formation Développeur Web — OpenClassrooms</h3>
+            <h3>Formation Développeur Web chez OpenClassrooms</h3>
             <p>Progression du HTML/CSS jusqu'au Full-Stack : intégration responsive, JavaScript et API, React, back-end Node.js/Express/MongoDB, gestion de projet, et enfin ce portfolio.</p>
           </li>
         </ol>
