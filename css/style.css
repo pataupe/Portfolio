@@ -334,35 +334,39 @@ textarea:focus-visible {
 }
 .project-details summary {
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-weight: 600;
+  font-size: 0.85rem;
   color: var(--color-primary-dark);
-  display: block;
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.project-details summary:hover {
+  background: var(--color-accent-light);
 }
 .project-details summary::-webkit-details-marker { display: none; }
 .project-details summary::marker { content: ''; }
 .project-details summary::before {
-  content: '+ ';
-  display: inline-block;
-  width: 1em;
+  content: '+';
+  font-weight: 700;
 }
 .project-details[open] summary::before {
-  content: '– ';
+  content: '–';
 }
 .project-details dl {
   margin: 16px 0 0;
 }
-.project-details dt {
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: var(--color-text-secondary);
-  margin-top: 14px;
-}
-.project-details dt:first-child { margin-top: 0; }
-.project-details dd {
-  margin: 4px 0 0;
+.project-details p {
+  margin: 8px 0;
   font-size: 0.95rem;
+}
+.project-details p strong {
+  color: var(--color-primary-dark);
 }
 
 /* ---------- Timeline ---------- */
