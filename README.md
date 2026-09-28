@@ -32,7 +32,7 @@ Ce choix est volontaire : le site est majoritairement statique, il n'y avait don
 - Lien d'évitement ("skip link")
 - Focus clavier visible sur tous les éléments interactifs
 - Formulaire avec labels associés et messages d'erreur explicites (`aria-invalid`, `role="alert"`)
-- Testé avec Lighthouse et WAVE
+- Respect de `prefers-reduced-motion` pour les animations
 
 ## Lancer le projet en local
 
