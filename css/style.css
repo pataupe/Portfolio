@@ -5,6 +5,7 @@
   --color-accent-light: #99F6E4;
   --color-primary: #0D9488;
   --color-primary-dark: #115E59;
+  --color-primary-hover: #0B4844;
   --color-text: #1E293B;
   --color-text-secondary: #64748B;
   --color-border: #E2E8F0;
@@ -43,7 +44,7 @@ h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5em; }
 .skip-link {
   position: absolute;
   left: 8px; top: -48px;
-  background: var(--color-primary);
+  background: var(--color-primary-dark);
   color: #fff;
   padding: 10px 16px;
   border-radius: var(--radius);
@@ -95,10 +96,10 @@ textarea:focus-visible {
 .btn:hover { transform: translateY(-1px); }
 .btn:active { transform: translateY(0); }
 .btn-primary {
-  background: var(--color-primary);
+  background: var(--color-primary-dark);
   color: #fff;
 }
-.btn-primary:hover { background: var(--color-primary-dark); }
+.btn-primary:hover { background: var(--color-primary-hover); }
 .btn-secondary {
   background: transparent;
   color: var(--color-primary-dark);
@@ -264,8 +265,8 @@ textarea:focus-visible {
 }
 .filter-btn:hover { border-color: var(--color-primary); }
 .filter-btn.is-active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
   color: #fff;
 }
 
@@ -290,7 +291,7 @@ textarea:focus-visible {
 .project-card[hidden] { display: none; }
 .project-thumb {
   height: 140px;
-  background: var(--color-primary);
+  background: var(--color-primary-dark);
   color: #fff;
   display: flex;
   align-items: center;
