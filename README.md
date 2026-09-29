@@ -33,6 +33,7 @@ Ce choix est volontaire : le site est majoritairement statique, il n'y avait don
 - Focus clavier visible sur tous les éléments interactifs
 - Formulaire avec labels associés et messages d'erreur explicites (`aria-invalid`, `role="alert"`)
 - Respect de `prefers-reduced-motion` pour les animations
+- Audité avec axe-core (0 violation, 41 vérifications passées) : un problème de contraste insuffisant sur les boutons principaux a été détecté et corrigé
 
 ## Lancer le projet en local
 
