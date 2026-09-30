@@ -58,6 +58,8 @@ filterButtons.forEach((button) => {
 // Validation du formulaire de contact
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
+const formError = document.getElementById('formError');
+const submitBtn = document.getElementById('submitBtn');
 
 const fields = [
   {
@@ -91,16 +93,36 @@ fields.forEach((field) => {
   field.input.addEventListener('blur', () => validateField(field));
 });
 
-contactForm.addEventListener('submit', (event) => {
+contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   formSuccess.hidden = true;
+  formError.hidden = true;
 
   const allValid = fields.map(validateField).every(Boolean);
   if (!allValid) return;
 
-  // Pas de backend branché pour l'instant : simple confirmation visuelle.
-  formSuccess.hidden = false;
-  contactForm.reset();
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Envoi en cours...';
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { Accept: 'application/json' },
+    });
+
+    if (response.ok) {
+      formSuccess.hidden = false;
+      contactForm.reset();
+    } else {
+      formError.hidden = false;
+    }
+  } catch (error) {
+    formError.hidden = false;
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Envoyer';
+  }
 });
 
 // Animation d'apparition au scroll
