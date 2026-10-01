@@ -316,6 +316,9 @@ textarea:focus-visible {
   margin: 16px 0;
 }
 .tech-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: var(--color-bg-alt);
   color: var(--color-primary-dark);
   font-size: 0.8rem;
@@ -469,3 +472,8 @@ textarea:focus-visible {
   gap: 12px;
 }
 .footer-inner p { margin: 0; }
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
