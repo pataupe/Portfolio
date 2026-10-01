@@ -476,6 +476,10 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+}
+.footer-github:hover {
+  text-decoration: underline;
 }
 .footer-github i {
   font-size: 1.1rem;
