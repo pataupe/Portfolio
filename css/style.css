@@ -475,5 +475,8 @@ textarea:focus-visible {
 .footer-github {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+}
+.footer-github i {
+  font-size: 1.1rem;
 }
